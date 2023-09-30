@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "6cd03c632b354433",
+        "id": "6a6296adc176a974",
         "type": "tabs",
         "children": [
           {
-            "id": "bae728f208e03181",
+            "id": "bdb30686dc0d18be",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "StackOverflow.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "455918b6f8971214",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "GDB.md",
-                "mode": "source",
-                "source": false
+                "mode": "preview",
+                "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "79ac9af7bc160c38",
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GDB.md",
+                "file": "StackOverflow.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GDB.md",
+                "file": "StackOverflow.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,17 +125,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GDB.md"
+                "file": "StackOverflow.md"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -160,10 +146,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "455918b6f8971214",
+  "active": "bdb30686dc0d18be",
   "lastOpenFiles": [
-    "StackOverflow.md",
     "GDB.md",
+    "StackOverflow.md",
     "2023-09-18.md"
   ]
 }
