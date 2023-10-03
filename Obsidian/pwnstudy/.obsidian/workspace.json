@@ -15,7 +15,7 @@
               "state": {
                 "file": "StackOverflow.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
