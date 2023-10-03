@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "StackOverflow.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
               }
             }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "79ac9af7bc160c38",
@@ -129,8 +130,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -148,6 +148,7 @@
   },
   "active": "bdb30686dc0d18be",
   "lastOpenFiles": [
+    "Pasted image 20231002213346.png",
     "GDB.md",
     "StackOverflow.md",
     "2023-09-18.md"
