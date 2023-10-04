@@ -87,7 +87,7 @@
               "type": "backlink",
               "state": {
                 "file": "StackOverflow.md",
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -146,7 +146,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "bdb30686dc0d18be",
+  "active": "9fbf0ef5cee1b51e",
   "lastOpenFiles": [
     "Pasted image 20231002213346.png",
     "GDB.md",

