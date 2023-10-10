@@ -86,10 +86,10 @@
               "type": "backlink",
               "state": {
                 "file": "ctfshow-pwn/前置基础.md",
-                "collapseAll": false,
-                "extraContext": false,
+                "collapseAll": true,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
@@ -129,12 +129,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,11 +146,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f5b98a9af015a457",
+  "active": "b0b229f9f6bbda55",
   "lastOpenFiles": [
     "pwnstudy/StackOverflow.md",
-    "pwnstudy/GDB.md",
     "ctfshow-pwn/前置基础.md",
+    "pwnstudy/GDB.md",
     "pwnstudy/Pasted image 20231002213346.png",
     "未命名",
     "未命名 1",
