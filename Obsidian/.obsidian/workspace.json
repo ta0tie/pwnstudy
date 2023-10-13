@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e9586e40e5d74c44",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pwnstudy/StackOverflow.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ctfshow-pwn/前置基础.md",
+                "file": "pwnstudy/StackOverflow.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ctfshow-pwn/前置基础.md",
+                "file": "pwnstudy/StackOverflow.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ctfshow-pwn/前置基础.md"
+                "file": "pwnstudy/StackOverflow.md"
               }
             }
           }
@@ -146,12 +159,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b0b229f9f6bbda55",
+  "active": "e9586e40e5d74c44",
   "lastOpenFiles": [
+    "ctfshow-pwn/栈溢出.md",
     "pwnstudy/StackOverflow.md",
     "ctfshow-pwn/前置基础.md",
     "pwnstudy/GDB.md",
+    "[[StackOverflow.md",
+    "Pasted image 20231013144317.png",
     "pwnstudy/Pasted image 20231002213346.png",
+    "[.md",
     "未命名",
     "未命名 1",
     "ctfshow-pwn"
